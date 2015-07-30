@@ -27,7 +27,7 @@ namespace ConsoleUnitTest
             
             IPerson Jane = new Taiwanese("婷婷");
 
-            
+            log.Info("haha");
             log.Debug("123");
 
             Jane.Age = 40;
