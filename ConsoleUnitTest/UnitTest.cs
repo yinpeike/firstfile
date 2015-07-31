@@ -22,19 +22,31 @@ namespace ConsoleUnitTest
         }*/
 
         [TestMethod]
-        public void TestMethod1()
-        {
-            
+        public void TestMethod1_Jane_Na_Age()
+        {            
             IPerson Jane = new Taiwanese("婷婷");
-
-            log.Info("haha");
-            log.Debug("123");
-
+                   
             Jane.Age = 40;
             var varifying = "中華台北";
 
             Assert.AreEqual(Jane.Nationality,varifying);
+            log.Info("Jane 來自"+Jane.Nationality);            
             Assert.AreEqual(Jane.Age, 40);
+            log.Info("Jane 的年齡" + Jane.Age);
+        }
+
+        [TestMethod]
+        public void TestMethod2_Jane_Married()
+        {
+
+            IPerson Jane = new Taiwanese("婷婷");
+
+            Jane.Age = 40;
+            bool married = true;
+
+            Assert.AreEqual(Jane.Married(Jane.Age), married);
+            log.Info("Jane 結婚了" + Jane.Married(Jane.Age));
+
         }
 
 
