@@ -33,6 +33,7 @@ namespace ConsoleUnitTest
             log.Info("Jane 來自"+Jane.Nationality);            
             Assert.AreEqual(Jane.Age, 40);
             log.Info("Jane 的年齡" + Jane.Age);
+            log.Debug("haha");
         }
 
         [TestMethod]
